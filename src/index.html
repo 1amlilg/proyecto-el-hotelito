@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Hotelito</title>
+    <link rel="stylesheet" href="./output.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="bg-center bg-no-repeat min-h-screen bg-cover bg-[url('../img/BG.jpg')] bg-gray-700 bg-blend-multiply">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src=" " alt="El Hotelito">
+            </div>
+            <div
+                class="nav-links duration-500 md:static ml-auto font-bold absolute bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 text-white text-2xl p-10 text-shadow shadow-black click after:blur">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-orange-600" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-orange-600" href="#">El Hotelito</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-orange-600" href="#">Habitaciones</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-orange-600" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 text-white text-shadow shadow-black">
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden "></ion-icon>
+        </nav>
+
+        <div class="px-4 mx-auto max-w-screen-xl py-24 lg:py-30">
+            <h1 class="mb-4 text-4xl font-bold leading-none text-white md:text-6xl lg:text-6xl">El Hotelito, tu lugar
+                <br> para descansar.</h1>
+            <p class="mb-8 text-lg font-light text-white lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. <br> Laudantium id alias aspernatur assumenda perferendis <br> dolor maiores officiis voluptatem.
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm: sm:space-y-0 sm:space-x-4">
+                <a href="#"
+                    class="inline-flex items-center py-3 px-5 font-medium text-2xl text-center text-white rounded-2xl bg-orange-600 hover:bg-orange-700 focus:ring-4">
+                    Reservar
+                </a>
+                <a href="#"
+                    class="inline-flex hover:text-orange-600 items-center py-3 px-5 text-2xl font-medium text-center text-orange-600 rounded-2xl border bg-white hover:bg-gray-300">
+                    Leer más
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <section class="px-3 py-5 bg-neutral-100 lg:py-10">
+        <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
+            <div class="order-2 lg:order-1 flex flex-col justify-center items-left">
+                <h2 class="mb-4 text-4xl font-bold leading-none text-orange-600 md:text-6xl lg:text-5xl mx-20">Nuestra
+                    Historia</h2>
+                <p class="mb-8 text-xl font-light text-black lg:text-lg mx-20">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Vel aspernatur eveniet nihil fugit, magnam sunt? Modi repellat quidem iure ratione
+                    quasi cumque, assumenda fuga mollitia voluptatem rem! Velit tempore ut error veritatis? Eius
+                    voluptates officiis libero eum nam explicabo laboriosam.</p>
+                <p class="mb-8 text-xl font-light text-black lg:text-lg mx-20">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Vel aspernatur eveniet nihil fugit, magnam sunt? Modi repellat quidem iure ratione
+                    quasi cumque, assumenda fuga mollitia voluptatem rem! Velit tempore ut error veritatis? Eius
+                    voluptates officiis libero eum nam explicabo laboriosam.</p>
+            </div>
+            <div class="order-1 lg:order-2">
+                <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-3xl shadow-xl shadow-gray-500"
+                    src="../img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Fin del ABOUT -->
+
+
+    <script src="./hamburger-menu.js"></script>
+
+</body>
+
+</html>
