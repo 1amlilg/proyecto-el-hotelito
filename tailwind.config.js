@@ -22,5 +22,6 @@ plugins: [
       { values: theme('textShadow') }
     )
   }),
+
 ],
 }
