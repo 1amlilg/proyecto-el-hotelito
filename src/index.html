@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="scroll-smooth" lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Hotelito</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" rel="preconnect">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -18,10 +18,10 @@
     <div class="bg-center bg-no-repeat min-h-screen bg-cover bg-[url('../img/BG.jpg')]">
         <nav class="flex justify-between items-center w-[80%] mx-auto">
             <div>
-                <img class="w-24 cursor-pointer" src="/img/LOGO-HOTELITO@2x.png" alt="El Hotelito">
+                <img id="top" class="w-24 cursor-pointer" src="/img/LOGO-HOTELITO@2x.png" alt="El Hotelito">
             </div>
             <div
-                class="nav-links duration-500 md:static ml-auto font-bold text-3xl absolute bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 text-white md:text-lg p-10 md:bg-transparent bg-orange-500">
+                class="nav-links duration-500 md:static ml-auto font-bold text-3xl absolute bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 text-white md:text-lg p-10 md:bg-transparent bg-orange-700">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10">
                     <a class="hover:text-[#C55A11] hover:text-shadow-lg ease-in-out transition-all" href="#">Inicio</a>
                     <a class="hover:text-[#C55A11] hover:text-shadow-lg ease-in-out transition-all" href="#">El Hotelito</a>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- ABOUT -->
-    <section class="px-14 py-5 bg-neutral-100 lg:py-10 items-center justify-center m-auto">
+    <section  id="about" class="px-14 py-5 bg-neutral-100 lg:py-10 items-center justify-center m-auto">
         <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
             <div class="flex flex-col justify-center text-center md:text-left">
                 <h2 class="mb-8 text-4xl font-bold leading-none text-[#C55A11] md:text-5xl lg:text-5xl mx-20">Nuestra
@@ -84,7 +84,7 @@
     <!-- Fin del ABOUT -->
 
     <!-- HABITACIONES -->
-    <section class="bg-gradient-to-r from-[#C55A11] to-[#E2D5CC] max-w-full m-auto py-20 items-center justify-center">
+    <section id="habitaciones" class="bg-gradient-to-r from-[#C55A11] to-[#E2D5CC] max-w-full m-auto py-20 items-center justify-center">
         <h2 class="mb-20 text-4xl font-bold leading-none text-white md:text-6xl lg:text-5xl text-center">Habitaciones
         </h2>
         <!-- GRID -->
@@ -95,19 +95,19 @@
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item>
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="../img/IMG_9164.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 2 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item="active">
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item="active">
                             <img src="../img/IMG_9209.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 3 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item>
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="../img/IMG_9252.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
@@ -118,7 +118,7 @@
                         class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         data-carousel-prev>
                         <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
                             <svg class="w-4 h-4 text-orange-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -131,7 +131,7 @@
                         class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         data-carousel-next>
                         <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
                             <svg class="w-4 h-4 text-orange-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -156,19 +156,19 @@
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item>
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="../img/IMG_9164.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 2 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item="active">
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item="active">
                             <img src="../img/IMG_9209.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 3 -->
-                        <div class=" hiden duration-700 ease-in-out" data-carousel-item>
+                        <div class=" hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="../img/IMG_9252.jpg"
                                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="...">
@@ -179,7 +179,7 @@
                         class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         data-carousel-prev>
                         <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <svg class="w-4 h-4 text-orange-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -192,7 +192,7 @@
                         class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         data-carousel-next>
                         <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <svg class="w-4 h-4 text-orange-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
