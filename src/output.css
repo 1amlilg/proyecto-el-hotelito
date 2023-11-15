@@ -993,6 +993,16 @@ video {
   background-color: rgb(82 82 82 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/img\/BG\.jpg\'\)\] {
   background-image: url('../img/BG.jpg');
 }
